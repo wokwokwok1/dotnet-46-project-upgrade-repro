@@ -5,7 +5,6 @@ using System.Security.Claims;
 using System.Configuration;
 using System.Threading;
 using System.Web.Mvc;
-using System.Web.Http;
 using System.Web.Routing;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Optimization;
