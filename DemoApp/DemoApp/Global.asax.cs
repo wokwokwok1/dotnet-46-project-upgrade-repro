@@ -12,10 +12,12 @@ namespace DemoApp
     {
         protected void Application_Start()
         {
-            AreaRegistration.RegisterAllAreas();
-            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
+        }
+
+        protected void Application_Error(Object sender, EventArgs e)
+        {
+            var ex = Server.GetLastError();
+            System.Diagnostics.Debug.WriteLine(ex.ToString());
         }
     }
 }
